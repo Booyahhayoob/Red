@@ -50,7 +50,7 @@ class UpdateRed(getattr(commands, "Cog", object)):
 
     @checks.is_owner()
     @commands.command(aliases=["updatered"])
-    async def update(
+    async def updatered(
         self, ctx: commands.Context, version: str = "stable", *extras: str
     ) -> None:
         """Update Red with pip.
