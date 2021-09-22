@@ -103,7 +103,7 @@ class SteamCommunity(commands.Cog):
         """Run func in executor"""
         return await self.bot.loop.run_in_executor(None, partial(func, *args, **kwargs))
 
-    @commands.group(aliases=["sc"])
+    @commands.group(aliases=["steam"])
     async def steamcommunity(self, ctx):
         """SteamCommunity commands"""
         pass
