@@ -49,7 +49,7 @@ class UpdateRed(getattr(commands, "Cog", object)):
     _SAVED_PKG_RE: ClassVar[Pattern[str]] = re.compile(r"\s+Saved\s(?P<path>.*)$")
 
     @checks.is_owner()
-    @commands.command(aliases=["updatered"])
+    @commands.command()
     async def updatered(
         self, ctx: commands.Context, version: str = "stable", *extras: str
     ) -> None:
