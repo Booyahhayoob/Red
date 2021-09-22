@@ -346,7 +346,7 @@ class Comics(commands.Cog):
 
     @commands.bot_has_permissions(attach_files=True)
     @commands.command()
-    async def garfield(self, ctx, date: str = None):
+    async def fatcat(self, ctx, date: str = None):
         """
         Garfield
 
